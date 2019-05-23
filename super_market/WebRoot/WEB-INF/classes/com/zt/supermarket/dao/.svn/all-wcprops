@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/super_market/!svn/ver/22/src/com/zt/supermarket/dao
+END
+SurveyDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/super_market/!svn/ver/11/src/com/zt/supermarket/dao/SurveyDAO.java
+END
+MarketPicDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/dao/MarketPicDAO.java
+END
+MarketNewsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/super_market/!svn/ver/17/src/com/zt/supermarket/dao/MarketNewsDAO.java
+END
+MarketDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/dao/MarketDAO.java
+END
+BannerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/dao/BannerDAO.java
+END
+CommentsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/dao/CommentsDAO.java
+END
+ContentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/super_market/!svn/ver/22/src/com/zt/supermarket/dao/ContentDAO.java
+END
+MarketVedioDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/dao/MarketVedioDAO.java
+END

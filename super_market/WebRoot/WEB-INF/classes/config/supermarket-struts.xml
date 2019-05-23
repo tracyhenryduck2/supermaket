@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="com.zt.supermarket" namespace="/supermarket" 
+		extends="login.interceptor">
+		<action name="Content" class="com.zt.supermarket.action.ContentAction">
+	 		<result name="toAddContent">/supermarket/content_edit.jsp</result>
+	 		<result name="list">/supermarket/content_list.jsp</result>
+	 		<result name="search">/supermarket/content_search.jsp</result>
+		</action>
+		<action name="Market" class="com.zt.supermarket.action.MarketAction">
+	 		<result name="toAddMarket">/supermarket/market_edit.jsp</result>
+	 		<result name="list">/supermarket/market_list.jsp</result>
+	 		<result name="search">/supermarket/market_search.jsp</result>
+		</action>
+		<action name="Banner" class="com.zt.supermarket.action.BannerAction">
+	 		<result name="toAddBanner">/supermarket/banner_edit.jsp</result>
+	 		<result name="list">/supermarket/banner_list.jsp</result>
+	 		<result name="search">/supermarket/banner_search.jsp</result>
+		</action>
+		<action name="MarketNews" class="com.zt.supermarket.action.MarketNewsAction">
+	 		<result name="toAddMarketNews">/supermarket/marketNews_edit.jsp</result>
+	 		<result name="list">/supermarket/marketNews_list.jsp</result>
+	 		<result name="search">/supermarket/marketNews_search.jsp</result>
+		</action>
+		<action name="Comments" class="com.zt.supermarket.action.CommentsAction">
+	 		<result name="toAddComments">/supermarket/comments_edit.jsp</result>
+	 		<result name="list">/supermarket/comments_list.jsp</result>
+	 		<result name="search">/supermarket/comments_search.jsp</result>
+		</action>
+		<action name="Survey" class="com.zt.supermarket.action.SurveyAction">
+	 		<result name="toAddSurvey">/supermarket/survey_edit.jsp</result>
+	 		<result name="list">/supermarket/survey_list.jsp</result>
+	 		<result name="search">/supermarket/survey_search.jsp</result>
+	 		<result name="toAddSurveyQuestion">/supermarket/survey_question.jsp</result>
+	 		<result name="toNewQues">/supermarket/survey_newQues.jsp</result>
+		</action>
+		<action name="MarketPic" class="com.zt.supermarket.action.MarketPicAction">
+	 		<result name="toAddMarketPic">/supermarket/marketPic_edit.jsp</result>
+	 		<result name="list">/supermarket/marketPic_list.jsp</result>
+	 		<result name="search">/supermarket/marketPic_search.jsp</result>
+		</action>
+		<action name="MarketVedio" class="com.zt.supermarket.action.MarketVedioAction">
+	 		<result name="toAddMarketVedio">/supermarket/marketVedio_edit.jsp</result>
+	 		<result name="list">/supermarket/marketVedio_list.jsp</result>
+	 		<result name="search">/supermarket/marketVedio_search.jsp</result>
+		</action>
+		
+	</package>
+</struts>

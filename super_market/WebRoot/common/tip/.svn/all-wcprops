@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/super_market/!svn/ver/1/WebRoot/common/tip
+END
+login_error_message.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/super_market/!svn/ver/1/WebRoot/common/tip/login_error_message.jsp
+END
+self_error_message.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/super_market/!svn/ver/1/WebRoot/common/tip/self_error_message.jsp
+END
+forward_message.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/super_market/!svn/ver/1/WebRoot/common/tip/forward_message.jsp
+END
+self_forward_message.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/super_market/!svn/ver/1/WebRoot/common/tip/self_forward_message.jsp
+END

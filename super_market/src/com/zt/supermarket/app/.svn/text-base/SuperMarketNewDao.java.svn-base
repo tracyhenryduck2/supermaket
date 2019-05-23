@@ -1,0 +1,174 @@
+package com.zt.supermarket.app;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+import com.common.BaseDAO;
+
+public class SuperMarketNewDao extends BaseDAO{
+	
+	public List<Map<String, Object>> getUserList() {
+		String sql="select * from user";
+		return j.queryForList(sql);
+	}
+
+	public Long getUserbeanCount (String username){
+	  String sql = "select count(*) from user where username='"+username+"'";	
+   		
+	  return j.queryForLong(sql);
+	}
+	
+	
+	public Map<String, Object> login(String username, String password) {
+		Map<String,Object> map=new HashMap<String,Object>();
+		String sql="select id,nickname,avatar,type" +
+				" from user" +
+				" where username=? and password=?";
+		Object[] param={username,password};
+		Map<String,Object> user=j.queryForMap(sql,param);
+		if(user!=null){
+			map.put("result", "1");
+			map.put("user", user);
+		}else{
+			map.put("result", "0");
+		}
+		return map;
+	}
+	
+	
+	public Map<String, Object> weixlogin(String openid, String avatar,String nickname) {
+		Map<String,Object> map=new HashMap<String,Object>();
+		String sql="select count(*)" +
+				" from user" +
+				" where openid=?";
+		Object[] param={openid};
+		int count=j.queryForInteger(sql,param);
+		if(count==0){
+			String sql1="insert into user (type,nickname,avatar,openid) values(?,?,?,?)";
+			Object[] param2={2,nickname,avatar,openid};
+			j.execute(sql1,param2);
+		}
+
+			String sql2="select id,nickname,avatar,type" +
+			" from user" +
+			" where openid=?";
+			Object[] param3={openid};
+			Map<String,Object> user =j.queryForMap(sql2,param3);
+			if(user!=null){
+				map.put("result", "1");
+				map.put("user", user);
+			}else{
+				map.put("result", "0");
+			}
+
+		return map;
+	}
+	
+	public List<Map<String, Object>> getCollectionList(String uid) {
+		String sql = "select content_id as id,type from collection where user_id="+uid;
+		List<Map<String,Object>> lsit = j.queryForList(sql);
+		for(Map<String,Object> map:lsit){
+			 Long type = Long.parseLong(map.get("type")+"");
+			 Long id = Long.parseLong(map.get("id")+"");
+			 if(type==1){
+				 String sql2="select a.title,a.pic_url,a.digest,a.type_id from content a where  a.id="+id;
+				 Map<String,Object> map2 = j.queryForMap(sql2);
+				 map.put("title", map2.get("title")+"");
+				 map.put("pic_url", map2.get("pic_url")+"");
+				 map.put("digest", map2.get("digest")+"");
+				 map.put("type_id", map2.get("type_id")+"");
+			 }
+			 else if(type==2){
+				 String sql2="select a.title,a.pic_url,a.digest from market_news a where  a.id="+id;
+				 Map<String,Object> map2 = j.queryForMap(sql2);
+				 map.put("title", map2.get("title")+"");
+				 map.put("pic_url", map2.get("pic_url")+"");
+				 map.put("digest", map2.get("digest")+"");
+			 }
+		}
+		
+		return lsit;
+	}
+	
+	public boolean addCollection(String uid,String content_id,Long type){
+		String sql ="insert into collection (user_id,content_id,type) values (?,?,?)";
+		Object[] param={uid,content_id,type};
+		
+		return j.execute(sql,param);
+	}
+	
+	public boolean deleteCollection(String uid,String content_id,Long type){
+		String sql ="delete from collection where user_id=? and content_id=? and type=?";
+		Object[] param={uid,content_id,type};
+		
+		return j.execute(sql,param);
+	}
+	
+	public boolean insertSuggestion(String uid,String content,Long time){
+		String sql ="insert into user_comment (user_id,content,ctime) values (?,?,?)";
+		Object[] param={uid,content,time};
+		
+		return j.execute(sql,param);
+	}
+	
+	public List<Map<String, Object>> getLiuyanList(String uid) {
+		String sql="select a.*,b.avatar from user_comment a left join user b on a.user_id=b.id where user_id="+uid;
+		return j.queryForList(sql);
+	} 
+	
+	public Map<String, Object> modavatar(String uId, String url) {
+		Map<String,Object> map=new HashMap<String,Object>();
+		boolean result=false;
+		String sql="update user set avatar=? where id=?";
+		Object[] param={url,uId};
+		result=j.execute(sql,param);
+		if(result){
+			map.put("fileName", url);
+		}else{
+			map.put("fileName", null);
+		}
+		return map;
+	}
+	
+	public Map<String, Object> modPassword(String uId, String password,String newpassword) {
+		Map<String,Object> map=new HashMap<String,Object>();
+		boolean result=false;
+		String sql = "select count(*) from user where id="+uId+" and password='"+password+"'";
+		if(j.queryForLong(sql)>0){
+			String sql1="update user set password=? where id=?";
+			Object[] param={newpassword,uId};
+			result=j.execute(sql1,param);
+			if(result){
+				map.put("result", 1);
+			}else{
+				map.put("result", 0);
+			}
+		}
+		else {
+			map.put("result", 2);
+		}
+
+		return map;
+	}
+	
+	public Map<String, Object> modNickname(String uId, String nickname) {
+		Map<String,Object> map=new HashMap<String,Object>();
+		boolean result=false;
+		String sql="update user set nickname=? where id=?";
+		Object[] param={nickname,uId};
+		result=j.execute(sql,param);
+		if(result){
+			map.put("result", 1);
+		}else{
+			map.put("result", 0);
+		}
+		return map;
+	}
+	
+	public List<Map<String, Object>> gethotlist() {
+		 String sql = "select a.id,a.title from market_news a where a.show_index=1 order by id desc";
+		 return j.queryForList(sql);
+	}
+}

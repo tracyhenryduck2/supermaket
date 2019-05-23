@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/super_market/!svn/ver/18/WebRoot/system
+END
+sUser_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/super_market/!svn/ver/18/WebRoot/system/sUser_edit.jsp
+END
+sUser_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/super_market/!svn/ver/1/WebRoot/system/sUser_search.jsp
+END
+sUser_password_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/super_market/!svn/ver/1/WebRoot/system/sUser_password_edit.jsp
+END
+sFunctionGroup_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/super_market/!svn/ver/1/WebRoot/system/sFunctionGroup_edit.jsp
+END
+sFunctionGroup_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/super_market/!svn/ver/1/WebRoot/system/sFunctionGroup_search.jsp
+END
+sUser_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/super_market/!svn/ver/18/WebRoot/system/sUser_list.jsp
+END
+sFunction_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/super_market/!svn/ver/1/WebRoot/system/sFunction_edit.jsp
+END
+sFunction_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/super_market/!svn/ver/1/WebRoot/system/sFunction_search.jsp
+END
+sFunctionGroup_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/super_market/!svn/ver/1/WebRoot/system/sFunctionGroup_list.jsp
+END
+sFunction_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/super_market/!svn/ver/1/WebRoot/system/sFunction_list.jsp
+END

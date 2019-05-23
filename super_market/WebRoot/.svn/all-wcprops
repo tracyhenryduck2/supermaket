@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/super_market/!svn/ver/28/WebRoot
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/super_market/!svn/ver/1/WebRoot/test.html
+END
+index.action
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/super_market/!svn/ver/1/WebRoot/index.action
+END
+index1.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/super_market/!svn/ver/1/WebRoot/index1.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/super_market/!svn/ver/1/WebRoot/login.jsp
+END
+left.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/super_market/!svn/ver/1/WebRoot/left.jsp
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/super_market/!svn/ver/26/src/config
+END
+supermarket-app-struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/super_market/!svn/ver/26/src/config/supermarket-app-struts.xml
+END
+supermarket-struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/super_market/!svn/ver/1/src/config/supermarket-struts.xml
+END
+system-struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/super_market/!svn/ver/1/src/config/system-struts.xml
+END
+common-struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/super_market/!svn/ver/1/src/config/common-struts.xml
+END

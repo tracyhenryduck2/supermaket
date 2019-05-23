@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/super_market/!svn/ver/28/src/com/zt/supermarket/bean
+END
+ContentBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/super_market/!svn/ver/28/src/com/zt/supermarket/bean/ContentBean.java
+END
+MarketVedioBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/bean/MarketVedioBean.java
+END
+SurveyBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/bean/SurveyBean.java
+END
+UserBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/super_market/!svn/ver/26/src/com/zt/supermarket/bean/UserBean.java
+END
+MarketPicBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/bean/MarketPicBean.java
+END
+MarketNewsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/super_market/!svn/ver/28/src/com/zt/supermarket/bean/MarketNewsBean.java
+END
+MarketBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/super_market/!svn/ver/15/src/com/zt/supermarket/bean/MarketBean.java
+END
+BannerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/super_market/!svn/ver/1/src/com/zt/supermarket/bean/BannerBean.java
+END
+CommentsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/super_market/!svn/ver/13/src/com/zt/supermarket/bean/CommentsBean.java
+END

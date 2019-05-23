@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/super_market/!svn/ver/28/src
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/super_market/!svn/ver/1/src/struts.xml
+END
+datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/super_market/!svn/ver/26/src/datasource.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/super_market/!svn/ver/1/src/log4j.properties
+END
