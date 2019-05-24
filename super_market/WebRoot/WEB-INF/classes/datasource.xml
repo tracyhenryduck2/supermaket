@@ -4,7 +4,7 @@
 	<datasource>
 		<name>write</name>
 		<driver-class>com.mysql.jdbc.Driver</driver-class>
-		<driver-url>jdbc:mysql://112.33.1.143:3306/super_market?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-url>jdbc:mysql://112.33.21.65:3306/super_market?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
 		<user>root</user>
 		<password>zhouxin</password>
 		<show-sql>true</show-sql>
